@@ -1,0 +1,7 @@
+1.Qué condiciones de carrera se podrían presentar?
+basicamente si se quiere consultar pero al mismo tiempo alguien mas lo edito o creo uno nuevo
+2.Cuales son las respectivas regiones críticas?
+es donde su funcion se ve interrumpida o limitada en este caso es cuando se desee utilizar GET, POST, PUT, DELETE
+3.Que solucion da
+la solucion propuesta es que en la claseInMemoryBlueprintPersistenc
+implemetaremos thread en la tupla y se usara syncronized para que solo un hilo pueda usar las funciones
