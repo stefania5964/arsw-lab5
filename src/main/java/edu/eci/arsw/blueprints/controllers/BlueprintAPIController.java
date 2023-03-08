@@ -75,10 +75,10 @@ public class BlueprintAPIController {
     public ResponseEntity<?> controllerNewBluePrint(@RequestBody Blueprint bp){
         try {
             service.addNewBlueprint(bp);
-            return new ResponseEntity<>("Se agrego correctamente",HttpStatus.CREATED);
+            return new ResponseEntity<>("Se agrego correctamente.",HttpStatus.CREATED);
         } catch (Exception e) {
             Logger.getLogger(BlueprintAPIController.class.getName()).log(Level.SEVERE, null, e);
-            return new ResponseEntity<>("Error no se pudo agregar "+e.getMessage(),HttpStatus.NOT_ACCEPTABLE);
+            return new ResponseEntity<>("Error no se pudo agregar . "+e.getMessage(),HttpStatus.NOT_ACCEPTABLE);
         }
     }
     // actualizar un plano
